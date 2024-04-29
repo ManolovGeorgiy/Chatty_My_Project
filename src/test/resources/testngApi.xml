@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="testApi" verbose="1">
+    <test name="ApiTest">
+        <classes>
+            <class name="integration.tests.registration.RegistrationApiTest">
+            </class>
+            <class name="integration.tests.login.LoginApiTest">
+            </class>
+            <class name="integration.tests.post.UserCanCreateEditAndDeleteNewPost">
+            </class>
+            <class name="e2e.tests.post.UserCanDeletePostTest">
+            </class>
+            <class name="integration.tests.profile.UserCanAddAndUpdateData">
+            </class>
+            <class name="integration.tests.contactUs.UserCanSendMessageTest">
+            </class>
+            <class name="integration.tests.adminApi.AdminDeleteUser">
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="testE2eSmoke" verbose="1">
+    <test name="SmokeTestE2e">
+        <classes>
+            <class name="e2e.tests.registration.RegistrationAndAuthorisationAdminTest">
+            </class>
+            <class name="e2e.tests.login.LoginAdminTest">
+            </class>
+            <class name="e2e.tests.contactUs.ContactUsPositiveTest">
+            </class>
+            <class name="e2e.tests.about.AboutPageTest">
+            </class>
+            <class name="e2e.tests.contactUs.ContactUsNegativeTest">
+            </class>
+            <class name="e2e.tests.profile.AddUserDataProfileTestRemote">
+            </class>
+            <class name="e2e.tests.profile.EditUserDataProfileTestRemote">
+            </class>
+            <class name="e2e.tests.post.UserCanCreateEditAndDeletePost">
+            </class>
+        </classes>
+    </test>
+</suite>
