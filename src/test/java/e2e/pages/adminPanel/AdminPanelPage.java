@@ -7,14 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+
 public class AdminPanelPage extends BasePage {
-    @FindBy(xpath = "//*[@type='text']")
     WebElement searchEmailInput;
-    @FindBy(xpath = "//*[@class='email-btn']")
     WebElement emailButton;
-    @FindBy(xpath = "//*[@class='svg-inline--fa fa-pen-to-square ']")
     WebElement editAccount;
-    @FindBy(xpath = "//*[@class='svg-inline--fa fa-trash ']")
     WebElement deleteAccount;
 
     public AdminPanelPage(WebDriver driver) {
