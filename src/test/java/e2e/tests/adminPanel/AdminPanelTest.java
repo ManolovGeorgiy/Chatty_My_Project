@@ -12,6 +12,7 @@ import e2e.pages.profile.EditUserForm;
 import e2e.pages.registration.RegistrationPage;
 import org.testng.annotations.Test;
 
+
 public class AdminPanelTest extends TestBase {
 
     LoginPage loginPage;

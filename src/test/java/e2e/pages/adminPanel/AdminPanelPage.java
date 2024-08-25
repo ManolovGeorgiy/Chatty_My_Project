@@ -9,14 +9,25 @@ import org.openqa.selenium.support.FindBy;
 
 
 public class AdminPanelPage extends BasePage {
-    WebElement searchEmailInput;
-    WebElement emailButton;
-    WebElement editAccount;
-    WebElement deleteAccount;
+
 
     public AdminPanelPage(WebDriver driver) {
         super(driver);
     }
+
+
+    @FindBy(xpath = "//*[@type='text']")
+    WebElement searchEmailInput;
+
+    @FindBy(xpath = "//*[@class='email-btn']")
+    WebElement emailButton;
+
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-pen-to-square ']")
+    WebElement editAccount;
+
+    @FindBy(xpath = "//*[@class='svg-inline--fa fa-trash ']")
+    WebElement deleteAccount;
+
 
     @Step("Wait for loading adminPanel panel")
     public void waitForLoading() {
